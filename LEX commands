@@ -1,0 +1,28 @@
+How to run lex and yacc file 
+
+Easy Ways Guide to Run Lex and Yacc Programs on ubuntu. This post will show you how to run Lex and Yacc programs easily on ubuntu 12.04 I have assumed that you have a working Ubuntu 12.04 LTS version installed on your system and the computer is connected to the network. Ubuntu does not come installed with a lex and yacc compiler to do so install it first by 
+1. Opening the terminal 
+2. Type - sudo apt-get install flex
+3. Enter your password after installation of flex finishes 
+4. Type - sudo apt-get install bison 
+5. Enter your password. 
+
+Congratualtions Lex and Yacc have been installed on your system. 
+
+Running a Lex and Yacc program for compiling a lex program
+
+ 1. write the lex program in a file and save it as file.l (where file is the name of the file). 
+ 2. open the terminal and navigate to the directory where you have saved the file.l 
+ 3. type - lex file.l 
+ 4. then type - cc lex.yy.c -ll 
+ 5. then type - ./a.out
+ Your lex progam will be running now (provided it is correct). 
+ 
+for compiling lex and yacc together 
+
+      1write lex program in a file file.l and yacc in a file file.y
+2 open the terminal and navigate to the directory where you have saved the files. 
+3. type lex file.l 
+4. type yacc file.y 
+5. type cc lex.yy.c y.tab.h -ll 
+6. type ./a.out The lex and yacc will run succesfully now
